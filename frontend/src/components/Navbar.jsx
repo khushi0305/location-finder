@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-danger">
   <div className="container">
     <a className="navbar-brand" href="#">
-      Navbar
+      <b>CityScope</b>
     </a>
     <button
       className="navbar-toggler"
@@ -45,35 +45,7 @@ const Navbar = () => {
           <NavLink className="nav-link" to="/state">
            State Management
           </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/todo">
-           Todo List
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/list">
-           Product List
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/user">
-           User Manager
-          </NavLink>
         </li>     
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/cart">
-           Cart
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/chart">
-           Charts
-          </NavLink>
-        </li>
-        <li className="nav-item">
-           <h4>Cart Items : {cartItems.length}</h4>
-        </li>
 </ul>
         
     </div>
