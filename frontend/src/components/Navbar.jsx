@@ -1,7 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import useAppContext from '../AppContext';
 
 const Navbar = () => {
+  const {loggedIn, setloggedIn, logout}=useAppContext();
   return (
     <nav className="navbar navbar-expand-lg bg-danger">
   <div className="container">
@@ -35,17 +37,7 @@ const Navbar = () => {
           <NavLink className="nav-link" to="/signup">
            Signup
           </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/event">
-           Event Handling
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/state">
-           State Management
-          </NavLink>
-        </li>     
+        </li>    
 </ul>
         
     </div>
