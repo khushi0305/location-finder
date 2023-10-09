@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
+import SignUp from './components/SignUp';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<SignUp/>}/>
         <Route path='/navbar' element={<Navbar/>}/>
         <Route path="*" element={ <NotFound /> } />
       </Routes>

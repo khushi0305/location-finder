@@ -68,22 +68,23 @@ import React from 'react'
           <h2 className='my-3'>SignUp Form</h2>
           
         <form >
-          <label>Name</label>
+          <label>Name: </label>
           
           {/* <span style={{fontSize:10, marginLeft: '10px', color:'red'}}>{signupForm.touched.name && signupForm.errors.name}</span> */}
           <input id='name' type="text" className='form-control mb-3' />
-          
-          <label>Email</label>
+          <br/>
+          <br/>
+          <label>Email: </label>
           {/* <span style={{fontSize:10, marginLeft: '10px', color:'red'}}>{signupForm.touched.email && signupForm.errors.email}</span> */}
           <input type="text" id='email' className='form-control mb-3' />
           <br/>
 <br/>
-          <label>Password</label>
+          <label>Password: </label>
           {/* <span style={{fontSize: 10, marginLeft: '10px', color: 'red'}}>{signupForm.touched.password && signupForm.errors.password}</span> */}
           <input type="password" id='password' className='form-control mb-3' />
           <br/>
 <br/>
-          <label>Confirm Password</label>
+          <label>Confirm Password: </label>
           {/* <span style={{fontSize: 10, marginLeft: '10px', color: 'red'}}>{signupForm.touched.confirm && signupForm.errors.confirm}</span> */}
           <input type="password" id='confirm' className='form-control mb-3' />
 <br/>
