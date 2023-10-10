@@ -22,15 +22,13 @@ router.get('/getall', (req, res) => {
     }).catch((err) => {
         res.json(err);
     });
-    // res.send('respond from user getall')
 });
 
-//: denotes url parameter
-router.get('/getbyemail/:email', (req, res) => {
+router.get('/getbylocation/:location', (req, res) => {
 
-    console.log(req.params.email);
+    console.log(req.params.location);
 
-    Model.find({email : req.params.email})
+    Model.find({location : req.params.location})
     .then((result) => {
         res.json(result);
     }).catch((err) => {
@@ -47,7 +45,6 @@ router.get('/getbyid/:id', (req, res) => {
         res.json(err);
     });
 
-    // res.send('respond from user getbyid')
 });
 
 router.put('/update/:id', (req, res) => {
@@ -68,19 +65,6 @@ router.delete('/delete/:id', (req, res) => {
         res.json(err);
     });
 });
-
-router.post('/authenticate', (req, res) => {
-    Model.findOne(req.body)
-    .then((result) => {
-        if(result)
-        res.json(result);
-    else
-    res.status(400).json({message: "Login Failed"});
-    }).catch((err) => {
-        console.log(err);
-        res.json(err)
-    });
-})
 
 
 module.exports = router;
