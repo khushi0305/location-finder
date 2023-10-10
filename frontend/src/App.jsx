@@ -6,6 +6,7 @@ import Login from './components/Login';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 import SignUp from './components/SignUp';
+import AddPlace from './components/AddPlace';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<SignUp/>}/>
+        <Route path='/place' element={<AddPlace/>}/>
         <Route path="*" element={ <NotFound /> } />
       </Routes>
       </BrowserRouter>
