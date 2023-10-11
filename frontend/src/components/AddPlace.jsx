@@ -15,13 +15,6 @@ const AddPlace = () => {
 
             <label>Description: </label>
             <input type='text' id='describe' className='form-control'/>
-<br/>
-<br/>
-            <label>Image: </label>
-            <input type='' id='image'/>
-            <br/>
-            <br/>
-            <button type='submit' className='btn btn-primary w-100 mt-4'>Submit</button>
         </form>
         </div>
   )
