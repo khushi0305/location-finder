@@ -15,7 +15,7 @@ export const AppProvider = ({ children }) => {
   const logout = () => {
     setLoggedIn(false);
     sessionStorage.removeItem('user');
-    navigate('/login');
+    navigate('/Login');
   };
 
   return (
