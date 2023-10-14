@@ -8,17 +8,22 @@ const AddPlace = () => {
         <div className="card-body">
           <h2 className='my-3'>Add New Place: </h2>
         <form >
-            <label>Title: </label>
+            <label>Place: </label>
             <input type='text' id='title' className='form-control mb-3'/>
 <br/>
-            <label>Location: </label>
-            <input type='text' id= 'location' className='form-control mb-3'/>
-            <br/>
+<label for="">Location: </label>
+        <select>
+            <option value="North">North</option>
+            <option value="South">South</option>
+            <option value="East">East</option>
+            <option value="West">West</option>
+        </select>
+        <br/>
+        <br/>
             <label>Description: </label>
             <input type='text' id='describe' className='form-control'/>
 <br/>
             <label>Image: </label>
-            <br/>
             
             <input type='file' id='myfile'/>
             <br/>
