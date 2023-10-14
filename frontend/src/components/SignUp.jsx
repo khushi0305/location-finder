@@ -86,7 +86,7 @@ import * as Yup from "yup";
           <span style={{fontSize: 10, marginLeft: '10px', color: 'red'}}>{signupForm.touched.confirm && signupForm.errors.confirm}</span>
           <input type="password" id='confirm' className='form-control mb-3' />
 <br/>
-          <button type='submit' className='btn btn-primary w-100 mt-4'>Submit</button>
+          <button type='submit' className='btn btn-danger w-100 mt-4'>Submit</button>
         </form>
         </div>
       </div>

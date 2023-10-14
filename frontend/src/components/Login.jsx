@@ -67,7 +67,7 @@ const Login = () => {
           <input type="password" id='password' className='form-control mb-3' />
 <br/>
 <br/>
-          <button type='submit' className='btn btn-primary w-100 mt-4'>Submit</button>
+          <button type='submit' className='btn btn-danger w-100 mt-4'>Submit</button>
         </form>
           </div>
           </div>
