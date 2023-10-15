@@ -27,7 +27,7 @@ const AddPlace = () => {
             
             <input type='file' id='myfile'/>
             <br/>
-            <button type='submit' className='btn btn-primary w-100 mt-4'>Submit</button>
+            <button type='submit' className='btn btn-danger w-100 mt-4'>Submit</button>
         </form>
         </div>
         </div>
