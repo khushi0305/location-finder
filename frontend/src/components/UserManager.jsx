@@ -46,6 +46,16 @@ const UserManager = () => {
                                 <td>{index+1}</td>
                                 <td>{user._id}</td>
                                 <td>{user.name}</td>
+                                <td>{user.email}</td>
+                                <td>{user.password}</td>
+                                <td>
+                  <Link to={"/updateuser/"+user._id} className="btn btn-primary">Edit</Link>
+                </td>
+                <td>
+                                    <button
+                                    onClick={() => {deleteUser(user._id)}} 
+                                    className='btn btn-danger'>Delete</button>
+                                </td>
                             </tr>
                         ))
                     }
