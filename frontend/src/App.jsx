@@ -10,6 +10,9 @@ import AddPlace from './components/AddPlace';
 import UserAuth from './UserAuth';
 import UserManager from './components/UserManager';
 import { AppProvider } from './AppContext';
+import BrowseLocation from './components/BrowseLocation';
+import PlaceDetails from './components/PlaceDetails';
+import FindPlaces from './components/FindPlaces';
 
 function App() {
   return (
@@ -22,7 +25,11 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/place' element={<AddPlace/>}/>
+        <Route path='/browse' element={<BrowseLocation/>}/>
+        <Route path='/find' element={<FindPlaces/>}/>
+        <Route path='/details/:id' element={<PlaceDetails/>}/>
         <Route path='/user' element={<UserManager/>}/>
+        {/* <Route path="/updateuser/:id" element={ <UpdateUser /> } /> */}
         <Route path="/chat" element={ <UserAuth/> } />
         <Route path="*" element={ <NotFound /> } />
       </Routes>

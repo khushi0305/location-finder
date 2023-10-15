@@ -120,4 +120,4 @@ const UpdateUser = () => {
   )
 }
 
-export default UpdateUser
+export default UpdateUser;
