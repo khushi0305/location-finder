@@ -1,9 +1,17 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-// import useAppContext from '../AppContext';
+import useAppContext from '../AppContext';
 
 const Navbar = () => {
-  // const {loggedIn, setloggedIn, logout}=useAppContext();
+  const {loggedIn, logout} = useAppContext();
+  const showLoginOptions = () => {
+    if(loggedIn){
+      return (<li className='nav-item'>
+        <button className='btn btn-dark' onClick= {logout}>Logout</button>
+      </li>
+      );
+    }
+  }
   return (
     <nav className="navbar navbar-expand-lg bg-danger">
       <div className="container">
@@ -43,8 +51,13 @@ const Navbar = () => {
                 Add Place
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/user">
+                User Manager
+              </NavLink>
+            </li>
+            {showLoginOptions()}
           </ul>
-
         </div>
       </div>
     </nav>

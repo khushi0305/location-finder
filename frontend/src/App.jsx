@@ -8,6 +8,7 @@ import NotFound from './components/NotFound';
 import SignUp from './components/SignUp';
 import AddPlace from './components/AddPlace';
 import UserAuth from './UserAuth';
+import UserManager from './components/UserManager';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/place' element={<AddPlace/>}/>
+        <Route path='/user' element={<UserManager/>}/>
         <Route path="/chat" element={ <UserAuth/> } />
         <Route path="*" element={ <NotFound /> } />
       </Routes>
