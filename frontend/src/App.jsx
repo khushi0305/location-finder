@@ -9,11 +9,13 @@ import SignUp from './components/SignUp';
 import AddPlace from './components/AddPlace';
 import UserAuth from './UserAuth';
 import UserManager from './components/UserManager';
+import { AppProvider } from './AppContext';
 
 function App() {
   return (
     <div>
       <BrowserRouter>
+      <AppProvider>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -24,6 +26,7 @@ function App() {
         <Route path="/chat" element={ <UserAuth/> } />
         <Route path="*" element={ <NotFound /> } />
       </Routes>
+      </AppProvider>
       </BrowserRouter>
     </div>
   );
