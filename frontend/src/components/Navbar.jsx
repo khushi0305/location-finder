@@ -16,6 +16,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-danger">
       <div className="container">
         <a className="navbar-brand" href="#">
+        <img src='logo.png'/>
         </a>
         <button
           className="navbar-toggler"
@@ -29,7 +30,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <img src='logo.png'></img>
+          
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink className="nav-link" to="/">
