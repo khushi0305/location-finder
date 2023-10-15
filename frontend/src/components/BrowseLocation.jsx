@@ -5,7 +5,7 @@ const BrowseLocation = () => {
   const [LocList, setLocList] = useState([])
 
   const fetchLocData= async () => {
-    const res = await fetch('http://localhost:5000/user/getall');
+    const res = await fetch('http://localhost:5000/place/getall');
     const data = await res.json();
         console.log(data);
         setLocList(data);
