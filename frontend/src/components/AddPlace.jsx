@@ -1,7 +1,20 @@
+import { useFormik } from 'formik';
 import React from 'react'
 
 const AddPlace = () => {
-  
+  const PlaceForm = useFormik({
+    initialValues:{
+      title:'',
+      location:'',
+      description:'',
+      image:''
+    },
+    onSubmit: async (values) => {console.log(values);
+    const res = await fetch('http://localhost:5000/place/authenticate',{
+      method: 'POST',
+      body: JSON.stringify(values)
+    })}
+  })
   return (
     <div className='py-5 vh-100 bg-body-secondary'>
     <div className='col-md-4 mx-auto'>
