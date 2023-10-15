@@ -3,6 +3,6 @@ const myschema = new Schema({
     title: String,
     location : String,
     description : String,
-    img : String
+    image : String
 });
 module.exports = model('place', myschema);

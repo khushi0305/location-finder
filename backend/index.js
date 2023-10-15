@@ -4,7 +4,7 @@ const placeRouter = require('./routers/placeRouter');
 const cors = require('cors');
 
 const app = express();
-const port = 5500;
+const port = 5000;
 
 app.use(express.json());
 app.use(cors({
@@ -12,7 +12,7 @@ app.use(cors({
 }));
 
 app.use(express.json());
-app.use('user', userRouter);
+app.use('/user', userRouter);
 app.use('/place', placeRouter);
 
 app.get('/', (req, res) => {

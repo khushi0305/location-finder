@@ -12,10 +12,10 @@ import * as Yup from "yup";
     email: Yup.string().email('Invalid email').required('Email is Required'),
     password: Yup.string()
     .required('Please Enter your password')
-    .matches(
-      "^(?=.*[A-Za-z])(?=.*d)(?=.*[@$!%*#?&])[A-Za-zd@$!%*#?&]{8,}$",
-      "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"
-    ),
+    .matches(/^(?=.*[a-z])/, 'Must contain at least one lowercase character')
+.matches(/^(?=.*[A-Z])/, 'Must contain at least one uppercase character')
+.matches(/^(?=.*[0-9])/, 'Must contain at least one number')
+.matches(/^(?=.*[!@#%&])/, 'Must contain at least one special character'),
     confirm: Yup.string()
     .oneOf([Yup.ref('password'), null], 'Passwords must match')
   });
@@ -68,23 +68,23 @@ import * as Yup from "yup";
         <div className="card-body">
           <h2 className='my-3'>SignUp Form</h2>
           
-        <form >
+        <form onSubmit={signupForm.handleSubmit}>
           <label>Name: </label>
           
           <span style={{fontSize:10, marginLeft: '10px', color:'red'}}>{signupForm.touched.name && signupForm.errors.name}</span>
-          <input id='name' type="text" className='form-control mb-3' />
+          <input id='name' onChange={signupForm.handleChange} value={signupForm.values.name} type="text" className='form-control mb-3' />
           <br/>
           <label>Email: </label>
           <span style={{fontSize:10, marginLeft: '10px', color:'red'}}>{signupForm.touched.email && signupForm.errors.email}</span>
-          <input type="text" id='email' className='form-control mb-3' />
+          <input type="text" id='email' onChange={signupForm.handleChange} value={signupForm.values.email} className='form-control mb-3' />
           <br/>
           <label>Password: </label>
           <span style={{fontSize: 10, marginLeft: '10px', color: 'red'}}>{signupForm.touched.password && signupForm.errors.password}</span>
-          <input type="password" id='password' className='form-control mb-3' />
+          <input type="password" id='password' onChange={signupForm.handleChange} value={signupForm.values.password} className='form-control mb-3' />
           <br/>
           <label>Confirm Password: </label>
           <span style={{fontSize: 10, marginLeft: '10px', color: 'red'}}>{signupForm.touched.confirm && signupForm.errors.confirm}</span>
-          <input type="password" id='confirm' className='form-control mb-3' />
+          <input type="password" id='confirm' onChange={signupForm.handleChange} value={signupForm.values.confirm} className='form-control mb-3' />
 <br/>
           <button type='submit' className='btn btn-danger w-100 mt-4'>Submit</button>
         </form>
