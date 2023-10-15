@@ -32,7 +32,7 @@ const Login = () => {
         const data = await res.json();
         console.log(data);
 
-        sessionStorage.setItem('user', JSON.stringify(data));                           //removeItem, getItem, setItem
+        sessionStorage.setItem('user', JSON.stringify(data));                          
       }
       else if(res.status === 400){
         Swal.fire({
