@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 import SignUp from './components/SignUp';
 import AddPlace from './components/AddPlace';
+import UserAuth from './UserAuth';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/place' element={<AddPlace/>}/>
+        <Route path="/chat" element={ <UserAuth/> } />
         <Route path="*" element={ <NotFound /> } />
       </Routes>
       </BrowserRouter>
