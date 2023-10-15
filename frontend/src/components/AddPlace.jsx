@@ -1,6 +1,7 @@
 import React from 'react'
 
 const AddPlace = () => {
+  
   return (
     <div className='py-5 vh-100 bg-body-secondary'>
     <div className='col-md-4 mx-auto'>
