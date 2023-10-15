@@ -13,6 +13,7 @@ import { AppProvider } from './AppContext';
 import BrowseLocation from './components/BrowseLocation';
 import PlaceDetails from './components/PlaceDetails';
 import FindPlaces from './components/FindPlaces';
+import UpdateUser from './components/UpdateUser';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
         <Route path='/find' element={<FindPlaces/>}/>
         <Route path='/details/:id' element={<PlaceDetails/>}/>
         <Route path='/user' element={<UserManager/>}/>
-        {/* <Route path="/updateuser/:id" element={ <UpdateUser /> } /> */}
+        <Route path="/updateuser/:id" element={ <UpdateUser /> } />
         <Route path="/chat" element={ <UserAuth/> } />
         <Route path="*" element={ <NotFound /> } />
       </Routes>

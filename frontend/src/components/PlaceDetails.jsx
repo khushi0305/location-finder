@@ -6,7 +6,7 @@ const PlaceDetails = () => {
     const [placeData, setplaceData] = useState(null);
 
     const fetchPlaceData = async() => {
-        const res = await fetch("http://localhost:5000/project/getbyid/" + id)
+        const res = await fetch("http://localhost:5000/user/getbyid/" + id)
         const data = await res.json();
         console.log(data);
         setplaceData(data);
