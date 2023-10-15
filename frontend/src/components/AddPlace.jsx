@@ -23,8 +23,7 @@ const AddPlace = () => {
             <label>Description: </label>
             <input type='text' id='describe' className='form-control'/>
 <br/>
-            <label>Image: </label>
-            
+            <label>Image: </label>           
             <input type='file' id='myfile'/>
             <br/>
             <button type='submit' className='btn btn-danger w-100 mt-4'>Submit</button>

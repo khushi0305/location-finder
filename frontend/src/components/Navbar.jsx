@@ -7,7 +7,7 @@ const Navbar = () => {
   const showLoginOptions = () => {
     if(loggedIn){
       return (<li className='nav-item'>
-        <button className='btn btn-dark' onClick= {logout}>Logout</button>
+        <button className='btn btn-light' onClick= {logout}>Logout</button>
       </li>
       );
     }
