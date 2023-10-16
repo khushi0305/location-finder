@@ -3,18 +3,15 @@ import { Link } from 'react-router-dom'
 import LocationData from './DummyData'
 
 const BrowseLocation = () => {
-  const [LocList, setLocList] = useState(LocationData)
+  const [LocList, setLocList] = useState(LocationData);
 
-  // const fetchLocData = async () => {
-  //   const res = await fetch('http://localhost:5000/place/getall');
-  //   const data = await res.json();
-  //   console.log(data);
-  //   setLocList(data);
-  // }
+  const locations = ['North', 'South', 'East', 'West'];
 
-  // useEffect(() => {
-  //   fetchLocData()
-  // }, []);
+  const filterPlace = (e) => {
+    const search = e.target.value;
+    let filteredData = LocationData.filter( (loc) => {return loc.location === search});
+    setLocList(filteredData); 
+}
 
   const showData = () => {
     return LocList.map((loc) => {
@@ -34,14 +31,29 @@ const BrowseLocation = () => {
     })
   }
   return (
-    <div className='container'>
-      <h1 className=' text-dark'  > Let's Explore!! </h1>
+    <div className='row p-5'>
+                <div className='col-5'>
+                    <div className='card'>
+                        <div className='card-body'>
+                            <h3>Filter Places</h3>
+                            <hr/>
+                            <select className='form-control' onChange={filterPlace}>
+                                <option value="">Select Location</option>
+                                {
+                                    locations.map((b) => (<option value= {b}>{b}</option>))
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </div>
+    <div className='container p-5'>
+      {/* <h1 className=' text-dark'  > Let's Explore!! </h1>
       <h3 className='text-secondary'> Choose your Location...  </h3>
-      <div className='row'>
-        <h5 className='bg-body-dark'> Select your Place to visit in  a location:</h5>
+        <h5 className='bg-body-dark'> Select your Place to visit in  a location:</h5> */}
+        <div className='row'>
         {showData()}
       </div>
-
+</div>
     </div>
   )
 }

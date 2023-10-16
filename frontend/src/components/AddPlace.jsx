@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 
 const AddPlace = () => {
 
-  const locations = ['Delhi', 'Uttar Pradesh', 'Kerala', 'Maharashtra', 'Assam'];
+  const locations = ['Delhi', 'Uttar Pradesh', 'Kerala', 'Maharashtra', 'Assam', 'Karnataka'];
   const [selImg, setSelImg] = useState('');
 
   const PlaceForm = useFormik({
