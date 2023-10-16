@@ -27,7 +27,7 @@ function App() {
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/place' element={<AddPlace/>}/>
         <Route path='/browse' element={<BrowseLocation/>}/>
-        <Route path='/find' element={<FindPlaces/>}/>
+        <Route path='/find/:loc' element={<FindPlaces/>}/>
         <Route path='/details/:id' element={<PlaceDetails/>}/>
         <Route path='/user' element={<UserManager/>}/>
         <Route path="/updateuser/:id" element={ <UpdateUser /> } />

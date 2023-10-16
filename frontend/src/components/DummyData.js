@@ -1,4 +1,4 @@
-const PlaceData = [
+const LocationData = [
     {
         place: 'Delhi',
         location: 'North',
@@ -31,4 +31,4 @@ const PlaceData = [
     }
 ]
 
-export default PlaceData;
+export default LocationData;
