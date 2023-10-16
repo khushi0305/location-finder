@@ -92,7 +92,7 @@ const AddPlace = () => {
               <input type='text' id='description' onChange={PlaceForm.handleChange} value={PlaceForm.values.description} className='form-control' />
               <br />
               <label>Image: </label>
-              <input type='file' onChange={uploadFile} />
+              <input type='file' onChange={uploadFile} className='form-control' />
               <br />
               <button type='submit' className='btn btn-danger w-100 mt-4'>Submit</button>
             </form>

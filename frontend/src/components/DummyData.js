@@ -28,6 +28,12 @@ const LocationData = [
         location: 'South',
         description: "Kerala, southwestern coastal state of India. It is a small state, constituting only about 1 percent of the total area of the country. Kerala stretches for about 360 miles along the Malabar Coast, varying in width from roughly 20 to 75 miles.",
         image: 'https://worldmedianetwork.uk/wp-content/uploads/2020/08/KERALA-1024x768.jpg'
+    },
+    {
+        place: 'Karnataka',
+        location: 'South',
+        description: "Karnataka, formerly Mysore State, is a state in the southwestern region of India. It was formed as Mysore State on 1 November 1956, with the passage of the States Reorganisation Act, and renamed Karnataka in 1973. The state was part of the Carnatic region in British terminology. Its capital and largest city is Bengaluru (Bangalore).",
+        image: 'https://superrlife.com/wp-content/uploads/2019/03/5c7e851b15b84.png'
     }
 ]
 
