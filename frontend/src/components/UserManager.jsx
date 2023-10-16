@@ -29,7 +29,7 @@ const UserManager = () => {
         <div className='container py-4'>
             <h1 className='text-center'>User Manager</h1>
 
-            <table className='table table-dark'>
+            <table className='table table-danger'>
                 <thead>
                     <tr>
                         <th>S. No.</th>
@@ -50,7 +50,7 @@ const UserManager = () => {
                                 <td>{user.email}</td>
                                 <td>{user.password}</td>
                                 <td>
-                  <Link to={"/updateuser/"+user._id} className="btn btn-primary">Edit</Link>
+                  <Link to={"/updateuser/"+user._id} className="btn btn-light">Edit</Link>
                 </td>
                 <td>
                                     <button

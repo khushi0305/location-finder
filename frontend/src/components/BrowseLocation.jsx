@@ -24,8 +24,7 @@ const BrowseLocation = () => {
           <div className="card-body">
             <p>{loc.location}</p>
             <h3>{loc.place}</h3>
-            <p>{loc.description.substring(0, 50)} ...</p>
-            {/* <img>{loc.image}</img> */}
+            <p>{loc.description.substring(0, 175)} ...</p>
             <Link to={'/find/' + loc.place}>
               View More
             </Link>
