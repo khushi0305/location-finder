@@ -11,7 +11,6 @@ import UserAuth from './UserAuth';
 import UserManager from './components/UserManager';
 import { AppProvider } from './AppContext';
 import BrowseLocation from './components/BrowseLocation';
-import PlaceDetails from './components/PlaceDetails';
 import FindPlaces from './components/FindPlaces';
 import UpdateUser from './components/UpdateUser';
 import PlaceManager from './components/PlaceManager';
@@ -29,7 +28,6 @@ function App() {
         <Route path='/place' element={<AddPlace/>}/>
         <Route path='/browse' element={<BrowseLocation/>}/>
         <Route path='/find/:loc' element={<FindPlaces/>}/>
-        <Route path='/details/:id' element={<PlaceDetails/>}/>
         <Route path='/placemanager' element={<PlaceManager/>}/>
         <Route path='/user' element={<UserManager/>}/>
         <Route path="/updateuser/:id" element={ <UpdateUser /> } />

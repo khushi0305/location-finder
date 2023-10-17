@@ -13,8 +13,8 @@ const Navbar = () => {
     }
   }
   return (
-    <nav className="navbar navbar-expand-lg bg-danger">
-      <div className="container">
+    <nav className="navbar navbar-expand-lg bg-danger navbar-dark">
+      <div className="container-fluid">
         <a className="navbar-brand" href="#">
         <img src='logo.png'/>
         </a>
@@ -50,11 +50,6 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink className="nav-link" to="/browse">
                 Browse Location
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/details">
-                Place Details
               </NavLink>
             </li>
             <li className="nav-item">

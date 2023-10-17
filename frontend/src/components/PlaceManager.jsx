@@ -28,7 +28,7 @@ const PlaceManager = () => {
   return (
     <div className='vh-100 bg-body-secondary'>
         <div className='container py-4'>
-            <h1 className='text-center'>User Manager</h1>
+            <h1 className='text-center'>Place Manager</h1>
 
             <table className='table table-danger'>
                 <thead>
@@ -46,7 +46,7 @@ const PlaceManager = () => {
                         placeList.map((place, index) => (
                             <tr>
                                 <td>{index+1}</td>
-                                <td><img src={`/util/${place.image}`} alt={place.name} /></td>
+                                <td><img height={50} src={`http://localhost:5000/${place.image}`} alt={place.name} /></td>
                                 <td>{place.title}</td>
                                 <td>{place.location}</td>
                                 <td>{place.description}</td>
