@@ -28,6 +28,7 @@ const FindPlaces = () => {
           </div>
           <div className="col-md-8">
             <h3>{place.title}</h3>
+            <p>{place.description}</p>
           </div>
         </div>
 
@@ -38,7 +39,7 @@ const FindPlaces = () => {
 
   return (
     <div>
-      <div className='container'>
+      <div className='container py-5'>
         {displayPlaces()}
       </div>
     </div>

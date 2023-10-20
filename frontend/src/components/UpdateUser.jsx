@@ -38,7 +38,7 @@ const UpdateUser = () => {
                 title: 'updated',
                 text : 'user updated successfully'
             })
-            navigate('/usermanager');
+            navigate('/user');
         }
         console.log(values);
     }
@@ -104,7 +104,7 @@ const UpdateUser = () => {
                  className="form-control mb-3"
                />
  
-               <button type="submit" className="btn btn-primary w-100 mt-4">
+               <button type="submit" className="btn btn-danger w-100 mt-4">
                  Submit
                </button>
              </form>
