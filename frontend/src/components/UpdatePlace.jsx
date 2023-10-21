@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import { Formik } from 'formik';
+import Swal from 'sweetalert2';
 
 const UpdatePlace = () => {
   const locations = ['Delhi', 'Uttar Pradesh', 'Kerala', 'Maharashtra', 'Assam', 'Karnataka'];
@@ -49,7 +51,7 @@ const UpdatePlace = () => {
                placeData!==null ? 
        <Formik
            initialValues={placeData}
-           onSubmit={PlaceForm}
+           onSubmit={submitForm}
        >
            { (PlaceForm) => (
                <form onSubmit={PlaceForm.handleSubmit}>
