@@ -23,7 +23,7 @@ const UpdateUser = () => {
     }, []);
 
     const submitForm = async (values) => {
-        const res = await fetch('https://localhost:5000/user/update/'+id, {
+        const res = await fetch('http://localhost:5000/user/update/'+id, {
             method: 'PUT',
             body: JSON.stringify(values),
             headers: {

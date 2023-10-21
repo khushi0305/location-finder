@@ -7,6 +7,7 @@ const UpdatePlace = () => {
   const locations = ['Delhi', 'Uttar Pradesh', 'Kerala', 'Maharashtra', 'Assam', 'Karnataka'];
     const {id} = useParams();
     const [placeData, setplaceData] = useState(null);
+    const [selImg, setSelImg] = useState('');
 
     const navigate = useNavigate();
 
@@ -22,7 +23,7 @@ const UpdatePlace = () => {
     }, []);
 
     const submitForm = async (values) => {
-      const res = await fetch('https://localhost:5000/place/update/'+id, {
+      const res = await fetch('http://localhost:5000/place/update/'+id, {
           method: 'PUT',
           body: JSON.stringify(values),
           headers: {
@@ -41,6 +42,21 @@ const UpdatePlace = () => {
       }
       console.log(values);
   }
+  const uploadFile = (e) => {
+    const file = e.target.files[0];
+    setSelImg(file.name);
+    const fd = new FormData();
+    fd.append("myfile", file);
+    fetch("http://localhost:5000/util/uploadfile", {
+      method: "POST",
+      body: fd,
+    }).then((res) => {
+      if (res.status === 200) {
+        console.log("file uploaded");
+      }
+    });
+  };
+
   return (
     <div>
     <div className="col-md-4 mx-auto">
@@ -84,7 +100,7 @@ const UpdatePlace = () => {
  
                <label>Description: </label>
                <span style={{ fontSize: 10, marginLeft: "10px", color: "red" }}>
-                 {PlaceForm.touched.description && signupForm.errors.description}
+                 {PlaceForm.touched.description && PlaceForm.errors.description}
                </span>
                <input type='text' id='description' onChange={PlaceForm.handleChange} value={PlaceForm.values.description} className='form-control mb-3' />
  

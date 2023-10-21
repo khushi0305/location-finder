@@ -14,6 +14,7 @@ import BrowseLocation from './components/BrowseLocation';
 import FindPlaces from './components/FindPlaces';
 import UpdateUser from './components/UpdateUser';
 import PlaceManager from './components/PlaceManager';
+import UpdatePlace from './components/UpdatePlace';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/placemanager' element={<PlaceManager/>}/>
         <Route path='/user' element={<UserManager/>}/>
         <Route path="/updateuser/:id" element={ <UpdateUser /> } />
+        <Route path="/updateplace/:id" element={ <UpdatePlace /> } />
         <Route path="/chat" element={ <UserAuth/> } />
         <Route path="*" element={ <NotFound /> } />
       </Routes>

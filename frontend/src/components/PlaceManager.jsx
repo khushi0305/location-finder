@@ -46,7 +46,7 @@ const PlaceManager = () => {
                         placeList.map((place, index) => (
                             <tr>
                                 <td>{index+1}</td>
-                                <td><img height={50} src={`http://localhost:5000/${place.image}`} alt={place.name} /></td>
+                                <td><img height={70} src={`http://localhost:5000/${place.image}`} alt={place.name} /></td>
                                 <td>{place.title}</td>
                                 <td>{place.location}</td>
                                 <td>{place.description}</td>

@@ -26,8 +26,8 @@ const FindPlaces = () => {
             <img className='w-100' src={"http://localhost:5000/" + place.image} alt="" />
 
           </div>
-          <div className="col-md-8">
-            <h3>{place.title}</h3>
+          <div className="col-md-8 py-2">
+            <h3 className='fw-bold'>{place.title}</h3>
             <p>{place.description}</p>
           </div>
         </div>
