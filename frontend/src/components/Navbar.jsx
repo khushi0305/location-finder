@@ -57,11 +57,11 @@ const Navbar = () => {
                 Add Place
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink className="nav-link" to="/find">
                 Find Place
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
               <NavLink className="nav-link" to="/placemanager">
                 Place Manager

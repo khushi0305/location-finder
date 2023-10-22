@@ -26,7 +26,7 @@ const PlaceManager = () => {
         }
     }
   return (
-    <div className='vh-100 bg-body-secondary'>
+    <div className='bg-body-secondary background'>
         <div className='container py-4'>
             <h1 className='text-center'>Place Manager</h1>
 
