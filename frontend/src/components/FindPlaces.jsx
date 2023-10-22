@@ -20,7 +20,7 @@ const FindPlaces = () => {
 
   const displayPlaces = () => {
     return placeList.map((place) => (
-      <div className='card'>
+      <div className='card mb-3'>
         <div className="row">
           <div className="col-md-4">
             <img className='w-100' src={"http://localhost:5000/" + place.image} alt="" />
