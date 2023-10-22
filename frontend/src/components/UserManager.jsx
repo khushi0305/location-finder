@@ -25,7 +25,7 @@ const UserManager = () => {
             }
     }
   return (
-    <div className='vh-100 bg-body-secondary'>
+    <div className='vh-100 back'>
         <div className='container py-4'>
             <h1 className='text-center'>User Manager</h1>
 

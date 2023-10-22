@@ -26,7 +26,9 @@ const PlaceManager = () => {
         }
     }
   return (
-    <div className='bg-body-secondary background'>
+    <div className='background'>
+        <div style={{backdropFilter: 'blur(5px)'}}>
+
         <div className='container py-4'>
             <h1 className='text-center'>Place Manager</h1>
 
@@ -57,6 +59,7 @@ const PlaceManager = () => {
                     }
                 </tbody>
             </table>
+        </div>
         </div>
     </div>
   )

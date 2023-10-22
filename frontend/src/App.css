@@ -47,7 +47,14 @@
 }
 
 .background{
-  background-image: url('https://irritablebowelsyndrome.net/wp-content/uploads/2016/06/777.jpg');
+  background-image: url('https://images.pexels.com/photos/17366637/pexels-photo-17366637/free-photo-of-woman-on-hilltop-over-forest-under-clouds.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
   background-size: cover;
-  backdrop-filter: blur(5px);
+  /* height: 100vh; */
+  background-attachment: fixed;
+}
+
+.back{
+  background-image: url("https://images.pexels.com/photos/354103/pexels-photo-354103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-attachment: fixed;
 }
