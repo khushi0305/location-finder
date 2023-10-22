@@ -40,6 +40,7 @@
 .myimg{
   width: 100%;
   height: auto;
+  /* background-size: cover; */
 }
 
 .head{
@@ -49,12 +50,19 @@
 .background{
   background-image: url('https://images.pexels.com/photos/17366637/pexels-photo-17366637/free-photo-of-woman-on-hilltop-over-forest-under-clouds.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
   background-size: cover;
-  /* height: 100vh; */
   background-attachment: fixed;
 }
 
 .back{
-  background-image: url("https://images.pexels.com/photos/354103/pexels-photo-354103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-image: url("https://images.pexels.com/photos/7235893/pexels-photo-7235893.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   background-size: cover;
+  height: 100vh;
   background-attachment: fixed;
 }
+
+/* .hd{
+  background-image: url('https://images.pexels.com/photos/5201780/pexels-photo-5201780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+} */

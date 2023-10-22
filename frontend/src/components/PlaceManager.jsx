@@ -30,7 +30,7 @@ const PlaceManager = () => {
         <div style={{backdropFilter: 'blur(5px)'}}>
 
         <div className='container py-4'>
-            <h1 className='text-center'>Place Manager</h1>
+            <h1 className='text-center fw-bold'>Place Manager</h1>
 
             <table className='table table-danger'>
                 <thead>

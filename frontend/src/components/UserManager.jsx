@@ -25,9 +25,11 @@ const UserManager = () => {
             }
     }
   return (
-    <div className='vh-100 back'>
+    <div className='back'>
+        <div className='h-100' style={{backdropFilter: 'blur(5px)'}}>
+            
         <div className='container py-4'>
-            <h1 className='text-center'>User Manager</h1>
+            <h1 className='text-center fw-bold'>User Manager</h1>
 
             <table className='table table-danger'>
                 <thead>
@@ -62,6 +64,7 @@ const UserManager = () => {
                     }
                 </tbody>
             </table>
+        </div>
         </div>
     </div>
   )
