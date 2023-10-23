@@ -52,7 +52,8 @@ const Login = () => {
   })
   
   return (
-    <div className='py-5 vh-100 bg-body-secondary'>
+    <div className='py-5 log'>
+      {/* <div style={{backdropFilter: 'blur(4px)'}}> */}
       <div className='col-md-4 mx-auto'>
       <div className='card'>
         <div className="card-body">
@@ -73,6 +74,7 @@ const Login = () => {
           </div>
           </div>
     </div>
+    // </div>
 
   )
 }

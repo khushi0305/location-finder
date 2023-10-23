@@ -62,14 +62,18 @@ const BrowseLocation = () => {
       </header>
 
 
-
+<div className='bimg'>
+<div className='h-100' style={{backdropFilter: 'blur(5px)'}}>
       <div className='container p-5'>
+      
         {/* <h1 className=' text-dark'  > Let's Explore!! </h1>
       <h3 className='text-secondary'> Choose your Location...  </h3>
         <h5 className='bg-body-dark'> Select your Place to visit in  a location:</h5> */}
         <div className='row'>
           {showData()}
         </div>
+      </div>
+      </div>
       </div>
     </>
   )
