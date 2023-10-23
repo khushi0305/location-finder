@@ -83,7 +83,7 @@
 
 .log{
   background-image: url('https://images.pexels.com/photos/262713/pexels-photo-262713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-  height: 100vh;
+  /* height: 100vh; */
   background-size: cover;
   background-attachment: fixed;
 }

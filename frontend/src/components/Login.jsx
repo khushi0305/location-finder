@@ -52,20 +52,18 @@ const Login = () => {
   })
   
   return (
-    <div className='py-5 log'>
+    <div className='p-5 vh-100 log'>
       <div className='col-md-4 mx-auto'>
       <div className='card'>
         <div className="card-body">
-          <h2 className='my-3'>LogIn Form</h2>
+          <h2 className='my-3 text-center fw-bold'>LogIn Form</h2>
           <form onSubmit={loginForm.handleSubmit}>
           
           <label>Email: </label>
           <input type="text" id='email'  onChange={loginForm.handleChange} value={loginForm.values.email} className='form-control mb-3' />
           <br/>
-          <br/>
           <label>Password: </label>
           <input type="password" id='password' onChange={loginForm.handleChange} value={loginForm.values.password} className='form-control mb-3' />
-<br/>
 <br/>
           <button type='submit' className='btn btn-danger w-100 mt-4'>Submit</button>
         </form>

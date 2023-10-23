@@ -65,11 +65,11 @@ const SignUp = () => {
   
 
   return (
-    <div className='py-5 log'>
+    <div className='p-5 log'>
       <div className='col-md-4 mx-auto'>
         <div className='card'>
           <div className="card-body">
-            <h2 className='my-3'>SignUp Form</h2>
+            <h2 className='my-3 text-center fw-bold'>SignUp Form</h2>
 
             <form onSubmit={signupForm.handleSubmit}>
               <label>Name: </label>
