@@ -88,6 +88,10 @@
   background-attachment: fixed;
 }
 
-.card{
+.my-card-img{
   transition-duration: 0.3s;
+}
+
+.my-card-img:hover{
+  transform: scale(1.05);
 }
