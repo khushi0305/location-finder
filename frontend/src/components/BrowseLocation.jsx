@@ -26,7 +26,7 @@ const BrowseLocation = () => {
     return LocList.map((loc) => {
       return <div className='col-md-4 mb-4'>
         <div className='card'>
-          <img style={{ height: 250, objectFit: 'cover' }} src={loc.image} alt="" />
+          <img style={{ height: 250, objectFit: 'cover' }} src={loc.image} alt="" className='my-card-img' />
           <div className="card-body">
             <p>{loc.location}</p>
             <h3>{loc.place}</h3>
